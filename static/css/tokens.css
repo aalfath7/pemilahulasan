@@ -1,0 +1,110 @@
+/* Design tokens. Semua warna & ukuran diambil dari sini. */
+:root {
+  color-scheme: light;
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --surface-2: #f1f3f9;
+  --border: #e3e7ef;
+  --border-strong: #cdd4e1;
+  --text: #0f172a;
+  --text-2: #475569;
+  --text-3: #5b6577;
+
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --primary-fg: #ffffff;
+  --primary-soft: #eef2ff;
+  --focus: #6366f1;
+
+  /* Warna sentimen (tetap) */
+  --pos: #16a34a;
+  --neu: #64748b;
+  --neg: #dc2626;
+  --urg: #ea580c;
+
+  --pos-soft: #dcfce7; --pos-ink: #15803d;
+  --neu-soft: #eef1f5; --neu-ink: #475569;
+  --neg-soft: #fee2e2; --neg-ink: #b91c1c;
+  --urg-soft: #ffedd5; --urg-ink: #c2410c;
+  --spam-soft: #f3e8ff; --spam-ink: #7e22ce;
+
+  --info-soft: #e0f2fe; --info-ink: #075985;
+  --warn-soft: #fef3c7; --warn-ink: #92400e;
+  --err-soft: #fee2e2; --err-ink: #991b1b;
+
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px rgb(15 23 42 / 0.05);
+  --shadow: 0 1px 3px rgb(15 23 42 / 0.06), 0 6px 20px -8px rgb(15 23 42 / 0.10);
+  --shadow-lg: 0 20px 50px -12px rgb(15 23 42 / 0.30);
+
+  --font: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --ease: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --dur: 180ms;
+
+  --row-h: 144px; /* tinggi baris daftar ulasan (termasuk jarak) */
+  --container: 1080px;
+}
+
+@media (max-width: 640px) {
+  :root { --row-h: 152px; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0b1020;
+    --surface: #121829;
+    --surface-2: #19213a;
+    --border: #232d48;
+    --border-strong: #33405f;
+    --text: #e6eaf3;
+    --text-2: #a9b4c8;
+    --text-3: #8592a9;
+    --primary: #818cf8;
+    --primary-hover: #a5b4fc;
+    --primary-fg: #0b1020;
+    --primary-soft: rgb(129 140 248 / 0.14);
+    --focus: #a5b4fc;
+    --pos-soft: rgb(34 197 94 / 0.15); --pos-ink: #4ade80;
+    --neu-soft: rgb(148 163 184 / 0.14); --neu-ink: #cbd5e1;
+    --neg-soft: rgb(239 68 68 / 0.16); --neg-ink: #f87171;
+    --urg-soft: rgb(249 115 22 / 0.16); --urg-ink: #fb923c;
+    --spam-soft: rgb(168 85 247 / 0.16); --spam-ink: #c084fc;
+    --info-soft: rgb(56 189 248 / 0.14); --info-ink: #7dd3fc;
+    --warn-soft: rgb(245 158 11 / 0.15); --warn-ink: #fcd34d;
+    --err-soft: rgb(239 68 68 / 0.16); --err-ink: #fca5a5;
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3);
+    --shadow: 0 1px 3px rgb(0 0 0 / 0.3), 0 6px 20px -8px rgb(0 0 0 / 0.5);
+    --shadow-lg: 0 20px 50px -12px rgb(0 0 0 / 0.7);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0b1020;
+  --surface: #121829;
+  --surface-2: #19213a;
+  --border: #232d48;
+  --border-strong: #33405f;
+  --text: #e6eaf3;
+  --text-2: #a9b4c8;
+  --text-3: #8592a9;
+  --primary: #818cf8;
+  --primary-hover: #a5b4fc;
+  --primary-fg: #0b1020;
+  --primary-soft: rgb(129 140 248 / 0.14);
+  --focus: #a5b4fc;
+  --pos-soft: rgb(34 197 94 / 0.15); --pos-ink: #4ade80;
+  --neu-soft: rgb(148 163 184 / 0.14); --neu-ink: #cbd5e1;
+  --neg-soft: rgb(239 68 68 / 0.16); --neg-ink: #f87171;
+  --urg-soft: rgb(249 115 22 / 0.16); --urg-ink: #fb923c;
+  --spam-soft: rgb(168 85 247 / 0.16); --spam-ink: #c084fc;
+  --info-soft: rgb(56 189 248 / 0.14); --info-ink: #7dd3fc;
+  --warn-soft: rgb(245 158 11 / 0.15); --warn-ink: #fcd34d;
+  --err-soft: rgb(239 68 68 / 0.16); --err-ink: #fca5a5;
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3);
+  --shadow: 0 1px 3px rgb(0 0 0 / 0.3), 0 6px 20px -8px rgb(0 0 0 / 0.5);
+  --shadow-lg: 0 20px 50px -12px rgb(0 0 0 / 0.7);
+}
